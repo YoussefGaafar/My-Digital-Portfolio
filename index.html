@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Portfolio</title>
+
+    <!-- Main CSS File -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Normalize CSS File -->
+    <link rel="stylesheet" href="css/normalize.css" />
+
+    <!-- Font Awesone Library-->
+    <link rel="stylesheet" href="css/all.min.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="profile-image">
+        <img src="images/profile-picture.png" alt="Profile Image" />
+      </div>
+      <h1 class="name">Youssef Gaafar</h1>
+      <h2 class="location">Cairo, Egypt</h2>
+      <h2 class="job-title">"Front-end developer"</h2>
+      <div class="box github">
+        <i class="fa-brands fa-github"></i>
+        <a href="https://github.com/YoussefGaafar">Github</a>
+      </div>
+      <div class="box mentor">
+        <img src="images/frontend-mentor.png" alt="Frontend Mentor Logo" />
+        <a href="https://www.frontendmentor.io/profile/YoussefGaafar"
+          >Frontend Mentor</a
+        >
+      </div>
+      <div class="box linkedin">
+        <i class="fa-brands fa-linkedin"></i>
+        <a href="https://www.linkedin.com/in/youssefgaafar/">LinkedIn</a>
+      </div>
+      <div class="box twitter">
+        <i class="fa-brands fa-twitter"></i>
+        <a href="https://x.com/JoGaafar">Twitter</a>
+      </div>
+      <div class="box instagram">
+        <i class="fa-brands fa-instagram"></i>
+        <a
+          href="https://www.instagram.com/joegaafar?igsh=eW1hanpkcmcybWF4&utm_source=qr"
+          >Instagram</a
+        >
+      </div>
+    </div>
+    <script>
+      const linkBoxes = document.querySelectorAll('.box');
+      linkBoxes.forEach((linkBox) => {
+        linkBox.addEventListener('click', function (e) {
+          window.open(linkBox.querySelector('a').href);
+        });
+      });
+    </script>
+  </body>
+</html>

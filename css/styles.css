@@ -1,0 +1,124 @@
+/* Start Variables */
+:root {
+  --location-color: #a5c730;
+  --background-color: #141414;
+  --text-color: rgb(221, 221, 221);
+  --container-color: #1f1f1f;
+  --temp-color: white;
+}
+
+/* End Variables */
+
+/* Start Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  /*Font of the project*/
+  font-family: 'Inter', sans-serif;
+}
+
+/* End Global Rules */
+
+.container {
+  background-color: var(--container-color);
+  border-radius: 20px;
+  box-shadow: 11px 10px 10px var(--container-color);
+  width: 368px;
+  /* height: 645px; */
+  text-align: center;
+  align-content: center;
+}
+
+.container .profile-image {
+  width: 100%;
+  text-align: center;
+}
+
+.container .profile-image img {
+  /* width: 140px; */
+  width: 10.5rem;
+  height: 13rem;
+  margin-top: 15px;
+  border-radius: 100%;
+}
+
+.container .name {
+  color: var(--text-color);
+  text-align: center;
+  font-size: 28px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.container .location {
+  color: var(--location-color);
+  font-size: 22px;
+  margin-top: 6px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.container .job-title {
+  color: var(--text-color);
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 35px;
+}
+
+.container .box {
+  text-align: center;
+  background-color: rgb(51, 51, 51);
+  height: 44px;
+  margin-top: 13px;
+  margin-bottom: 13px;
+  margin-left: 35px;
+  margin-right: 35px;
+  border-radius: 5px;
+  padding: 13px;
+}
+.container .box:hover {
+  background-color: var(--location-color);
+  /*Open the link in a new tab*/
+  cursor: pointer;
+}
+
+.container .box:active {
+  background-color: var(--location-color);
+  /*Open the link in a new tab*/
+  cursor: pointer;
+}
+
+.container .box img {
+  width: 14px;
+  margin-right: 1px;
+  margin-top: 2px;
+}
+
+.container .box a {
+  color: var(--text-color);
+  text-decoration: none;
+  text-align: center;
+  font-size: medium;
+}
+
+.container .box.linkedin i {
+  color: #0e76a8;
+}
+
+.container .box.twitter i {
+  color: rgb(29, 161, 242);
+}
+
+.container .box.instagram i {
+  color: #962fbf;
+}
